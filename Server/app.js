@@ -12,7 +12,7 @@ app.use(cors());
 app.use(bodyParser.json());
 
 // MongoDB connection
-mongoose.connect('mongodb+srv://advat04:Password12@initialdb.yedkdzh.mongodb.net/?retryWrites=true&w=majority', {
+mongoose.connect('mongodb://localhost:27017', {
   useNewUrlParser: true
 });
 

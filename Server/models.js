@@ -5,9 +5,11 @@ const campaignSchema = new mongoose.Schema({
   title: String,
   description: String,
   qty: Number,
-  loc:String,
-  img:String
+  loc: String,
+  expired: { type: Boolean, default: false },
+  img: String, // Adding date field
 });
+  
 
 const Campaign = mongoose.model('Campaign', campaignSchema);
 
